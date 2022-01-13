@@ -1,23 +1,9 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import random
-
-
-# In[2]:
-
 
 suits = ('Hearts', 'Diamonds', 'Spades', 'Clubs')
 ranks = ('Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Jack', 'Queen', 'King', 'Ace')
 values = {'Two':2, 'Three':3, 'Four':4, 'Five':5, 'Six':6, 'Seven':7, 'Eight':8, 
             'Nine':9, 'Ten':10, 'Jack':11, 'Queen':12, 'King':13, 'Ace':14}
-
-
-# In[3]:
-
 
 class Card:
     
@@ -28,10 +14,6 @@ class Card:
             
         def __str__(self):
             return f'{self.rank} of {self.suit}'
-
-
-# In[4]:
-
 
 class Deck:
     def __init__(self):
@@ -46,10 +28,6 @@ class Deck:
     def deal_one(self):
         return self.all_cards.pop(0)
     
-
-
-# In[23]:
-
 
 class Player:
     def __init__(self,name):
@@ -67,20 +45,6 @@ class Player:
     def __str__(self):
         return f'Player {self.name} has {len(self.all_cards)} cards.'
 
-
-# In[51]:
-
-
-
-
-
-# In[52]:
-
-
-
-
-
-# In[54]:
 
 
 #Game setup
@@ -153,18 +117,5 @@ while game_on:
                 for i in range(5):
                     player_one_cards.append(player_one.remove_one())
                     player_two_cards.append(player_two.remove_one())
-                
-                
-            
-    
-    
-    
-    
-    
-
-
-# In[ ]:
-
-
 
 
