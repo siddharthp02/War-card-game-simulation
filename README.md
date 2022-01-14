@@ -1,4 +1,4 @@
-# War-card-game
+# War-card-game-simulation
 War card game simulation implemented in python using OOP
 
 Using python OOP to simulate a simplified version of the game war. 
